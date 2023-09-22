@@ -1,0 +1,70 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.button-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #9B0951;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #E55C28;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Coloca o modal na frente de tudo */
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 450px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* Adicione um espaçamento entre os botões */
+}
+
+.modal-buttons a {
+  color: white;
+}
+
+.modal-buttons button {
+  flex: 1; /* Distribui o espaço igualmente entre os botões */
+  margin-right: 10px; /* Adicione um espaçamento entre os botões */
+}
+
+/* Estilize o último botão para que não haja margem à direita */
+.modal-buttons button:last-child {
+  margin-right: 0;
+}
+
